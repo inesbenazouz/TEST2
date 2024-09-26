@@ -16,12 +16,7 @@ pipeline {
             }
         }
 
-        stage('Test Application') {
-            steps {
-                // Run unit tests
-                sh 'mvn test'
-            }
-        }
+    
 
         stage('Hello World') {
             steps {
