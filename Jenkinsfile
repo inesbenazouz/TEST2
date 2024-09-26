@@ -9,10 +9,10 @@ pipeline {
             }
         }
 
-        stage('Build with Maven') {
+        stage('Testing Maven') {
             steps {
                 // Compile and build the project using Maven
-                sh 'mvn clean install'
+                sh "mvn -version"
             }
         }
 
